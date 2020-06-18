@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+</head>
+<body bgcolor="#0077b6">
+    <div>
+        <form method="POST">
+            <input type="text" name="username" maxlength="20">
+            <p1><br></p1>
+            <textarea name="post_content" rows="4" cols="50"></textarea>
+            <p1><br></p1>
+            <input type="submit" value="Enviar">
+        </form>
+        <div align="center">
+            {% for i in post %}
+            <div> {{ i[1] }}</div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
